@@ -1,0 +1,2 @@
+{{- $path := strings.TrimRight "/" .path -}}
+<li class="kubernetes-enhancement">{{ if ( index . "kep-number" ) }}<span class="kepnumber">#{{ index . "kep-number" }}</span> {{ end }}<a href="https://github.com/kubernetes/enhancements/tree/master/{{ $path }}/#readme" title="{{ .title }}">{{ .title }}</a></li>
